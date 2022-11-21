@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1f8fe929.css",
-    "main.js": "/portfolio/static/js/main.e01a3c74.js",
+    "main.js": "/portfolio/static/js/main.8c55f504.js",
     "static/media/Check24.png": "/portfolio/static/media/Check24.1679e661c0c6e3b16ef4.png",
     "static/media/GreenCoding.png": "/portfolio/static/media/GreenCoding.d863280d6d6bffc61f0e.png",
     "static/media/WordCounter.png": "/portfolio/static/media/WordCounter.b12c3450e6a8f0f44d97.png",
@@ -15,10 +15,10 @@
     "static/media/TUM.webp": "/portfolio/static/media/TUM.1801c05eb83d8c56b0c6.webp",
     "index.html": "/portfolio/index.html",
     "main.1f8fe929.css.map": "/portfolio/static/css/main.1f8fe929.css.map",
-    "main.e01a3c74.js.map": "/portfolio/static/js/main.e01a3c74.js.map"
+    "main.8c55f504.js.map": "/portfolio/static/js/main.8c55f504.js.map"
   },
   "entrypoints": [
     "static/css/main.1f8fe929.css",
-    "static/js/main.e01a3c74.js"
+    "static/js/main.8c55f504.js"
   ]
 }
