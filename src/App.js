@@ -1,25 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import CV from './pages/CV'
+import Projekte from './pages/Projekte'
+import PathNotFound from './pages/PathNotFound'
+import GreenCoding  from './Projekte/GreenCoding'
+import WordCounter from './Projekte/WordCounter'
+import Check24 from './Projekte/Check24'
+import { useEffect, useState } from 'react'
 
-function App() {
+const App = () => {
+  const [show, setShow] = useState(false)
+  const handleShow = () => setShow(!show);
+
+   // Dark Theme
+   const [theme, setTheme] = useState(localStorage.getItem("theme"));
+   const [checked, setChecked] = useState(localStorage.getItem("checked"));
+   const [mobile, showMobile] = useState(false);
+   const setDark = () => {
+       document.body.setAttribute("data-theme", "dark-theme")
+       setTheme("dark");
+       setChecked(true);
+   };
+
+   const setLight = () => {
+       document.body.setAttribute("data-theme", "light-theme")
+       setTheme("light");
+       setChecked(false);
+   };
+
+   useEffect(() => {
+       localStorage.setItem("theme", theme);
+       if (theme === "light") {
+           setLight();
+       } else if (theme === "dark") {
+           setDark();
+       }
+   }, [theme])
+
+
+
+
+   const switchTheme = (e) => {
+       if (e.target.checked) {
+           setDark();
+       } else {
+           setLight();
+       }
+   }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
+        <Route path='/cv' element={<CV showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
+        <Route path='/projekte' element={<Projekte showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
+        <Route path="/projekte/greencoding" element={<GreenCoding showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
+        <Route path="/projekte/wordcount" element={<WordCounter showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
+        <Route path="/projekte/check24" element={<Check24 showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
+        <Route path="*" element={<PathNotFound />} />
+      </Routes>
+    </BrowserRouter>)
 }
 
-export default App;
+export default App
