@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 import Home from './pages/Home'
 import CV from './pages/CV'
 import Projekte from './pages/Projekte'
@@ -48,7 +48,7 @@ const App = () => {
        }
    }
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route index element={<Home showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
         <Route path='/cv' element={<CV showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
@@ -58,7 +58,7 @@ const App = () => {
         <Route path="/projekte/check24" element={<Check24 showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
         <Route path="*" element={<PathNotFound />} />
       </Routes>
-    </BrowserRouter>)
+    </HashRouter>)
 }
 
 export default App
