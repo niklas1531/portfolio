@@ -3,9 +3,9 @@ import LoginModal from "../components/LoginModal";
 import Nav from "../components/Nav";
 import CardComponent from "../components/CardComponent";
 import Check24 from '../images/Check24.png'
-import Calculator from '../images/Calculator.png'
+import Taschenrechner from '../images/Calculator.png'
 import GreenCoding from '../images/GreenCoding.png'
-import WordCounter from '../images/WordCounter.png'
+import WorCounter from '../images/WordCounter.png'
 import WebCrawler from '../images/webcrawler.png'
 import { Link } from "react-router-dom";
 import FooterMobil from '../components/FooterMobil';
@@ -16,12 +16,12 @@ const Projekte = ({show, handleShow, showMobile, mobile, switchTheme,checked }) 
         <div className="content-all black">
         <p> <Link className='linkBack'to='/'>Home</Link> / Projekte</p>
                     <CardComponent title='Word Counter'
-                        img={WordCounter}
-                        to='/projekte/wordcount'
+                        img={WorCounter}
+                        to='/projekte/wordcounter'
                     />
-                    <CardComponent title='Calculator'
-                        img={Calculator}
-                        to='/projekte/calculator'
+                    <CardComponent title='Taschenrechner'
+                        img={Taschenrechner}
+                        to='/projekte/taschenrechner'
                     />
                     <CardComponent title='Check24 Challenge'
                         img={Check24}

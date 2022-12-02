@@ -5,7 +5,7 @@ import Nav from "../../components/Nav";
 import FooterMobil from '../../components/FooterMobil';
 import './styles.css'
 import { useState } from "react";
-const Calculator = ({ show, handleShow, showMobile, mobile, switchTheme, checked }) => {
+const Taschenrechner = ({ show, handleShow, showMobile, mobile, switchTheme, checked }) => {
     const [inputString, setInputString] = useState('0')
     const [num1, setNum1] = useState('')
     const [operator, setOperator] = useState('')
@@ -47,7 +47,7 @@ const Calculator = ({ show, handleShow, showMobile, mobile, switchTheme, checked
         <div>
             <Nav handleShow={handleShow} showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} />
             <div className="content-all black">
-                <p> <Link className='linkBack' to='/'>Home</Link> / <Link className='linkBack' to='/projekte'>Projekte</Link> / Calculator</p>
+                <p> <Link className='linkBack' to='/'>Home</Link> / <Link className='linkBack' to='/projekte'>Projekte</Link> / Taschenrechner</p>
                 <div className="container calculator">
                     <div className="row">
                         <div className="col-12 col-md-6 offset-md-3 display">
@@ -108,4 +108,4 @@ const Calculator = ({ show, handleShow, showMobile, mobile, switchTheme, checked
     );
 }
 
-export default Calculator;
+export default Taschenrechner;

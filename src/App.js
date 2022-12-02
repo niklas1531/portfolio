@@ -7,7 +7,8 @@ import GreenCoding  from './Projekte/GreenCoding'
 import WordCounter from './Projekte/WordCounter'
 import Check24 from './Projekte/Check24'
 import { useEffect, useState } from 'react'
-import Calculator from './Projekte/calculator/Calculator'
+import Taschenrechner from './Projekte/Taschenrechner/Taschenrechner'
+import Trinkgeld from './Projekte/Trinkgeld'
 
 const App = () => {
   const [show, setShow] = useState(false)
@@ -55,9 +56,10 @@ const App = () => {
         <Route path='/cv' element={<CV showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
         <Route path='/projekte' element={<Projekte showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
         <Route path="/projekte/greencoding" element={<GreenCoding showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
-        <Route path="/projekte/wordcount" element={<WordCounter showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
+        <Route path="/projekte/wordcounter" element={<WordCounter showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
         <Route path="/projekte/check24" element={<Check24 showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
-        <Route path="/projekte/calculator" element={<Calculator showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
+        <Route path="/projekte/taschenrechner" element={<Taschenrechner showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
+        {/* <Route path="/projekte/trinkgeld" element={<Trinkgeld showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} /> */}
         <Route path="*" element={<PathNotFound />} />
       </Routes>
     </HashRouter>)
