@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import Home from './pages/Home'
 import CV from './pages/CV'
 import Projekte from './pages/Projekte'
@@ -7,6 +7,7 @@ import GreenCoding  from './Projekte/GreenCoding'
 import WordCounter from './Projekte/WordCounter'
 import Check24 from './Projekte/Check24'
 import { useEffect, useState } from 'react'
+import Calculator from './Projekte/calculator/Calculator'
 
 const App = () => {
   const [show, setShow] = useState(false)
@@ -56,6 +57,7 @@ const App = () => {
         <Route path="/projekte/greencoding" element={<GreenCoding showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
         <Route path="/projekte/wordcount" element={<WordCounter showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
         <Route path="/projekte/check24" element={<Check24 showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
+        <Route path="/projekte/calculator" element={<Calculator showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
         <Route path="*" element={<PathNotFound />} />
       </Routes>
     </HashRouter>)

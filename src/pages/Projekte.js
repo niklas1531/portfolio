@@ -3,6 +3,7 @@ import LoginModal from "../components/LoginModal";
 import Nav from "../components/Nav";
 import CardComponent from "../components/CardComponent";
 import Check24 from '../images/Check24.png'
+import Calculator from '../images/Calculator.png'
 import GreenCoding from '../images/GreenCoding.png'
 import WordCounter from '../images/WordCounter.png'
 import WebCrawler from '../images/webcrawler.png'
@@ -17,6 +18,10 @@ const Projekte = ({show, handleShow, showMobile, mobile, switchTheme,checked }) 
                     <CardComponent title='Word Counter'
                         img={WordCounter}
                         to='/projekte/wordcount'
+                    />
+                    <CardComponent title='Calculator'
+                        img={Calculator}
+                        to='/projekte/calculator'
                     />
                     <CardComponent title='Check24 Challenge'
                         img={Check24}
