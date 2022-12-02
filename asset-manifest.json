@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1f8fe929.css",
-    "main.js": "/portfolio/static/js/main.9e27d940.js",
+    "main.css": "/portfolio/static/css/main.0f0a5428.css",
+    "main.js": "/portfolio/static/js/main.9b8fe2ee.js",
     "static/media/Check24.png": "/portfolio/static/media/Check24.1679e661c0c6e3b16ef4.png",
     "static/media/GreenCoding.png": "/portfolio/static/media/GreenCoding.d863280d6d6bffc61f0e.png",
+    "static/media/Calculator.png": "/portfolio/static/media/Calculator.1552a1a3753140a6dde5.png",
     "static/media/WordCounter.png": "/portfolio/static/media/WordCounter.b12c3450e6a8f0f44d97.png",
     "static/media/Lebenslauf_NiklasMinth.pdf": "/portfolio/static/media/Lebenslauf_NiklasMinth.44f8e5c302a071a598db.pdf",
     "static/media/Profilbild.png": "/portfolio/static/media/Profilbild.3537706ac31f97088f8b.png",
@@ -14,11 +15,11 @@
     "static/media/Webasto.jpeg": "/portfolio/static/media/Webasto.2b784efbe8c4d636ac13.jpeg",
     "static/media/TUM.webp": "/portfolio/static/media/TUM.1801c05eb83d8c56b0c6.webp",
     "index.html": "/portfolio/index.html",
-    "main.1f8fe929.css.map": "/portfolio/static/css/main.1f8fe929.css.map",
-    "main.9e27d940.js.map": "/portfolio/static/js/main.9e27d940.js.map"
+    "main.0f0a5428.css.map": "/portfolio/static/css/main.0f0a5428.css.map",
+    "main.9b8fe2ee.js.map": "/portfolio/static/js/main.9b8fe2ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f8fe929.css",
-    "static/js/main.9e27d940.js"
+    "static/css/main.0f0a5428.css",
+    "static/js/main.9b8fe2ee.js"
   ]
 }
