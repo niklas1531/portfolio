@@ -6,6 +6,7 @@ import PathNotFound from './pages/PathNotFound'
 import GreenCoding  from './Projekte/GreenCoding'
 import WordCounter from './Projekte/WordCounter'
 import Check24 from './Projekte/Check24'
+import Notizen from './Projekte/Notizen'
 import { useEffect, useState } from 'react'
 import Taschenrechner from './Projekte/Taschenrechner/Taschenrechner'
 
@@ -58,6 +59,7 @@ const App = () => {
         <Route path="/projekte/wordcounter" element={<WordCounter showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
         <Route path="/projekte/check24" element={<Check24 showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
         <Route path="/projekte/taschenrechner" element={<Taschenrechner showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
+        <Route path="/projekte/notizen" element={<Notizen showMobile={showMobile} mobile={mobile} switchTheme={switchTheme} checked={checked} show={show} handleShow={handleShow}/>} />
         <Route path="*" element={<PathNotFound />} />
       </Routes>
     </HashRouter>)

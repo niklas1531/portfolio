@@ -3,6 +3,7 @@ import LoginModal from "../components/LoginModal";
 import Nav from "../components/Nav";
 import CardComponent from "../components/CardComponent";
 import Check24 from '../images/Check24.png'
+import Notizen from '../images/notizen.png'
 import Taschenrechner from '../images/Calculator.png'
 import GreenCoding from '../images/GreenCoding.png'
 import WorCounter from '../images/WordCounter.png'
@@ -22,6 +23,11 @@ const Projekte = ({show, handleShow, showMobile, mobile, switchTheme,checked }) 
                     <CardComponent title='Taschenrechner'
                         img={Taschenrechner}
                         to='/projekte/taschenrechner'
+                    />
+                    <CardComponent title='Notizen'
+                        img={Notizen}
+                        to='/projekte/notizen'
+                        notification='Description coming soon'
                     />
                     <CardComponent title='Check24 Challenge'
                         img={Check24}
