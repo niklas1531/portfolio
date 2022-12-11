@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0f0a5428.css",
-    "main.js": "/portfolio/static/js/main.8b195f4a.js",
+    "main.js": "/portfolio/static/js/main.a007c454.js",
     "static/media/Check24.png": "/portfolio/static/media/Check24.1679e661c0c6e3b16ef4.png",
     "static/media/GreenCoding.png": "/portfolio/static/media/GreenCoding.d863280d6d6bffc61f0e.png",
     "static/media/Calculator.png": "/portfolio/static/media/Calculator.1552a1a3753140a6dde5.png",
     "static/media/WordCounter.png": "/portfolio/static/media/WordCounter.b12c3450e6a8f0f44d97.png",
+    "static/media/notizen.png": "/portfolio/static/media/notizen.c77bcf40119acb9e6e75.png",
     "static/media/Lebenslauf_NiklasMinth.pdf": "/portfolio/static/media/Lebenslauf_NiklasMinth.44f8e5c302a071a598db.pdf",
     "static/media/Profilbild.png": "/portfolio/static/media/Profilbild.3537706ac31f97088f8b.png",
     "static/media/Durstexpress.png": "/portfolio/static/media/Durstexpress.38e13e73b08fad184d7a.png",
@@ -16,10 +17,10 @@
     "static/media/TUM.webp": "/portfolio/static/media/TUM.1801c05eb83d8c56b0c6.webp",
     "index.html": "/portfolio/index.html",
     "main.0f0a5428.css.map": "/portfolio/static/css/main.0f0a5428.css.map",
-    "main.8b195f4a.js.map": "/portfolio/static/js/main.8b195f4a.js.map"
+    "main.a007c454.js.map": "/portfolio/static/js/main.a007c454.js.map"
   },
   "entrypoints": [
     "static/css/main.0f0a5428.css",
-    "static/js/main.8b195f4a.js"
+    "static/js/main.a007c454.js"
   ]
 }
